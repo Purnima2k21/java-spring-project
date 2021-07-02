@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Add a New StarShip</h1>
+<form action="#" th:action="@{/starships}" th:object="${starShip}" method="POST">
+    <div>
+        <label th:for="name">Name</label>
+        <input type="text" th:field="*{name}" />
+    </div>
+
+    <div>
+        <label th:for="description">Description</label>
+        <input type="decription" th:field="*{description}" />
+    </div>
+
+    <div>
+        <label th:for="fuelCapacity">Fuel Capacity</label>
+        <input type="fuelCapacity" th:field="*{fuelCapacity}" />
+    </div>
+
+    <div>
+        <input type="submit" value="Add a Starship" />
+    </div>
+</form>
+
+</body>
+</html>
